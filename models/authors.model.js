@@ -25,16 +25,12 @@ module.exports = (sequelize, Sequelize) => {
         
     },
     {
-        tableName: "authors", // TODO: refactor as consortium
+        tableName: "authors",
         timestamps: true,
         createdAt: "created",
         updatedAt: "updated",
         deletedAt: "deleted"
     });
-
-
-
-// Authors.hasMany(Books, { foreignKey: 'id' });
 
 return Authors;
 };
