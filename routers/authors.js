@@ -1,7 +1,5 @@
-var express = require('express');
-var router = express.Router({ mergeParams: true });
-
-
+const express = require('express');
+const router = express.Router({ mergeParams: true });
 const authorsController = require('../controllers/authorsController');
 
 router.route("/all").get(authorsController.fetchAllAuthors);
