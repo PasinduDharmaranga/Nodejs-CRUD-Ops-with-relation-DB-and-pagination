@@ -27,7 +27,7 @@ module.exports = (sequelize, Sequelize) => {
         
     },
     {
-        tableName: "books", // TODO: refactor as consortium
+        tableName: "books",
         timestamps: true,
         createdAt: "created",
         updatedAt: "updated",
