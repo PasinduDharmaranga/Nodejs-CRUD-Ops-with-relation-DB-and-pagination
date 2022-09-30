@@ -1,3 +1,4 @@
+'use strict';
 const Books = require("./books.model");
 
 module.exports = (sequelize, Sequelize) => {

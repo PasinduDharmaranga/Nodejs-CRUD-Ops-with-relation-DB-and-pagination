@@ -1,3 +1,5 @@
+'use strict';
+
 const models = require("./index")
 module.exports = (sequelize, Sequelize) => {
     const Books = sequelize.define("books", {
