@@ -1,6 +1,8 @@
 'use strict';
 
 require("dotenv").config();
+const logger = require("morgan");
+const helmet = require("helmet");
 const express = require("express");
 const cors = require("cors");
 const db = require("./models");
@@ -10,7 +12,8 @@ const indexRouter = require("./routers/index");
 const corsOptions = {
   origin: "http://localhost:8081"
 };
-
+app.use(helmet());
+app.use(logger("dev"));
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
